@@ -65,6 +65,16 @@
       "environment": {
         "MISE_EXPERIMENTAL": "1"
       }
+    },
+    "chrome-devtools": {
+      "enabled": true,
+      "type": "local",
+      "command": ["npx", "-y", "chrome-devtools-mcp@latest"]
+    },
+    "agentation": {
+      "enabled": true,
+      "type": "local",
+      "command": ["npx", "-y", "agentation-mcp", "server"]
     }
   }
 }
