@@ -1,4 +1,5 @@
 ;https://hackernoon.com/lesser-known-git-commands-151a1918a60
+;https://blog.gitbutler.com/how-git-core-devs-configure-git
 
 [user]
     name = Max Maximov
@@ -7,6 +8,18 @@
 [core]
     whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
     pager = delta
+    excludesfile = ~/.gitignore
+    fsmonitor = true
+    untrackedCache = true
+
+[column]
+    ui = auto
+
+[branch]
+    sort = -committerdate
+
+[tag]
+    sort = version:refname
 
 [init]
     defaultBranch = main
@@ -17,12 +30,15 @@
 [push]
     default = simple
     autoSetupRemote = true
+    followTags = true
 
 [fetch]
     prune = true
     pruneTags = true
+    all = true
 
 [rebase]
+    autoSquash = true
     autoStash = true
     updateRefs = true
 
@@ -38,12 +54,19 @@
 
 [diff]
     external = difft
+    algorithm = histogram
+    colorMoved = plain
+    mnemonicPrefix = true
+    renames = true
 
 [diff "plist"]
     textconv = "plutil -convert xml1 -o -"
 
 [help]
-    autocorrect = 1
+    autocorrect = prompt
+
+[commit]
+    verbose = true
 
 [alias]
     co = checkout
