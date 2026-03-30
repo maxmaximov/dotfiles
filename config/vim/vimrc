@@ -114,6 +114,21 @@ vnoremap <silent> * :call VisualSelection('f', '')<cr>
 " We need this to disable jshint
 "let b:ale_linters = {'javascript': ['eslint', 'flow', 'jscs', 'prettier', 'prettier-eslint', 'prettier-standard', 'standard', 'tsserver', 'xo']}
 
+let g:coc_global_extensions = [
+      \ 'coc-json',
+      \ 'coc-tsserver',
+      \ 'coc-prettier',
+      \ 'coc-eslint',
+      \ 'coc-kotlin',
+      \ 'coc-angular',
+      \ 'coc-stylelint',
+      \ 'coc-cssmodules',
+      \ 'coc-class-css',
+      \ 'coc-css',
+      \ 'coc-html',
+      \ 'coc-svg',
+      \ 'coc-xml',
+      \ ]
 
 " https://github.com/neoclide/coc.nvim?tab=readme-ov-file#example-vim-configuration
 " Make <CR> to accept selected completion item or notify coc.nvim to format
