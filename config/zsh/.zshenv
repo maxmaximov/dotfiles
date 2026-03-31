@@ -5,6 +5,9 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
 
+# Define HISTFILE in .zshenv so zsh itself, Apple Terminal session restore,
+# and any zsh plugins/hooks all agree on the same canonical history path.
+export HISTFILE="$XDG_STATE_HOME/zsh/history"
 export LESSHISTFILE="$XDG_STATE_HOME/lesshst"
 export npm_config_cache="$XDG_CACHE_HOME/npm"
 export NODE_REPL_HISTORY="$XDG_STATE_HOME/node_repl_history"

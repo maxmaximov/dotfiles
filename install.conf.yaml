@@ -10,8 +10,11 @@
 - create:
     - ~/.config
     - ~/.cache
+    - ~/.cache/zsh
     - ~/.local/share
     - ~/.local/state
+    - ~/.local/state/zsh
+    - ~/.local/state/zsh/sessions
     - ~/.ssh
 
 - shell:
@@ -38,7 +41,7 @@
       ignore-missing: true
     ~/.config/vim: config/vim
     ~/.config/zsh: config/zsh
-    ~/.config/zsh/.zsh_history:
+    ~/.local/state/zsh/history:
       path: ~/Documents/.zsh_history
       ignore-missing: true
 

@@ -1,5 +1,9 @@
 ZSH=$HOME/.config/zsh/oh-my-zsh
 ZSH_CUSTOM=$HOME/.config/zsh
+export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/.zcompdump-${HOST%%.*}-${ZSH_VERSION}"
+# macOS /etc/zshrc resets HISTFILE to ${ZDOTDIR}/.zsh_history for interactive
+# shells, so override it again here to keep the canonical XDG path.
+export HISTFILE="$XDG_STATE_HOME/zsh/history"
 
 #ZSH_THEME="agnoster"
 ZSH_THEME=""
