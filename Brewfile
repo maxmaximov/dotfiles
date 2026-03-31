@@ -19,6 +19,7 @@ brew "ripgrep"
 brew "terminal-notifier"
 brew "tldr"
 brew "vim"
+brew "watchman"
 brew "jandedobbeleer/oh-my-posh/oh-my-posh"
 
 cask "1password"

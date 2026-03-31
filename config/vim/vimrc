@@ -116,11 +116,15 @@ vnoremap <silent> * :call VisualSelection('f', '')<cr>
 
 let g:coc_global_extensions = [
       \ 'coc-json',
+      \ 'coc-toml',
       \ 'coc-tsserver',
       \ 'coc-prettier',
       \ 'coc-eslint',
       \ 'coc-kotlin',
-      \ 'coc-angular',
+      \ 'coc-yaml',
+      \ 'coc-sh',
+      \ 'coc-vimlsp',
+      \ 'coc-markdownlint',
       \ 'coc-stylelint',
       \ 'coc-cssmodules',
       \ 'coc-class-css',
