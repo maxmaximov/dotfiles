@@ -20,6 +20,7 @@ brew "terminal-notifier"
 brew "tldr"
 brew "vim"
 brew "watchman"
+brew "wget"
 brew "jandedobbeleer/oh-my-posh/oh-my-posh"
 
 cask "1password"
